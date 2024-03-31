@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+h2{
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    
+}
+
+h2 span{
+    transition: 0.5s;
+}
+
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+h2:hover span:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2:hover span:nth-child(1)::after{
+    content: "hink.";
+}
+
+h2:hover span:nth-child(3){
+    margin-left: 10px;
+}
+
+h2:hover span:nth-child(2)::after{
+    content: "uild.";
+}
+
+h2:hover span:nth-child(3)::after{
+    content: "gnite.";
+}
+
+
+
+h2:hover span{
+    transition: 0.8s;
+    color: white;
+    text-shadow:    0 0 10px rgba(255, 255, 250, 0.8),
+                     0 0 20px rgba(255, 255, 250, 0.65),
+                     0 0 30px rgba(255, 255, 250, 0.5),
+                     0 0 40px rgba(255, 255, 250, 0.35),
+                      0 0 50px rgba(255, 255, 250, 0.2),
+                      0 0 60px rgba(255, 255, 250, 0.2),
+                      0 0 70px rgba(255, 255, 250, 0.2);
+                      /* 0 0 80px rgba(255, 255, 250, 0.2),
+                      0 0 90px rgba(255, 255, 250, 0.2),
+                      0 0 100px rgba(255, 255, 250, 0.2); */
+                     /*0 0 60px rgba(255, 255, 255, 0.3),
+                     0 0 70px rgba(255, 255, 255, 0.2);
+                     
+                     */
+} 
